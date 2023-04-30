@@ -1,13 +1,11 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u https://github.com/PixelOS-AOSP/manifest.git -b thirteen -g default,-mips,-darwin,-notdefault
-git clone https://github.com/CodeChas3r1/local_manifest.git --depth 1 -b pixelos-13 .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android.git -b 12.1 -g default,-mips,-darwin,-notdefault
+git clone https://github.com/Futar0/local_manifest.git --depth 1 -b crdroid-12.1 .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
 source build/envsetup.sh
-lunch aosp_rosemary-userdebug
-export BUILD_HOSTNAME=Chas
-export BUILD_USERNAME=Chas
+lunch lineage_certus-userdebug
 export TZ=Asia/Jakarta #put before last build command
 make bacon
 
