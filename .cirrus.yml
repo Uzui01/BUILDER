@@ -11,14 +11,14 @@ task:
     memory: 32G
   env_script: env
   show_script: cat $CIRRUS_WORKING_DIR/build_rom.sh
-  notify_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/notify.sh | bash
-  test_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/test.sh | bash
-  test_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/test.sh | bash
-  sync_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/sync.sh | bash
-  tsync_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/tsync.sh | bash
-  build_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/build.sh | bash
-  ccache_stats_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/ccache_stats.sh | bash
-  upload_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/upload.sh | bash
-  remove_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/remove.sh | bash
-  test_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/test.sh | bash
-  post_build_script: curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/ci/post_build.sh | bash
+  notify_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/notify.sh | bash
+  test_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/test.sh | bash
+  test_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/test.sh | bash
+  sync_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/sync.sh | bash
+  tsync_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/tsync.sh | bash
+  build_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/build.sh | bash
+  ccache_stats_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/ccache_stats.sh | bash
+  upload_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/upload.sh | bash
+  remove_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/remove.sh | bash
+  test_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/test.sh | bash
+  post_build_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/post_build.sh | bash
