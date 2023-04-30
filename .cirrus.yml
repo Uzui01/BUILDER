@@ -6,7 +6,7 @@ task:
   name: Test, build and upload
   timeout_in: 240m
   container:
-    image: apon77/aosp:cirrus
+    image: apon77/aosp:latest
     cpu: 8
     memory: 32G
   env_script: env
