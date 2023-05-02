@@ -6,6 +6,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # build rom
 source build/envsetup.sh
 lunch lineage_certus-userdebug
+export SKIP_API_CHECKS=true
+export SKIP_ABI_CHECKS=true
 export TZ=Asia/Jakarta #put before last build command
 make bacon
 
