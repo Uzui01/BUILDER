@@ -7,7 +7,7 @@ task:
   timeout_in: 240m
   container:
     image: apon77/aosp:latest
-    cpu: 8
+    cpu: 16
     memory: 32G
   env_script: env
   show_script: cat $CIRRUS_WORKING_DIR/build_rom.sh
