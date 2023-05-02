@@ -8,7 +8,7 @@ task:
   container:
     image: apon77/aosp:latest
     cpu: 8
-    memory: 32G
+    memory: 64G
   env_script: env
   show_script: cat $CIRRUS_WORKING_DIR/build_rom.sh
   notify_script: curl -Ls https://raw.githubusercontent.com/Futar0/AOSP-BUILDS/main/ci/notify.sh | bash
